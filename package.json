@@ -1,5 +1,8 @@
 {
   "dependencies": {
-    "@csstools/normalize.css": "^12.1.1"
+    "@csstools/normalize.css": "^12.1.1",
+    "react-big-calendar": "^1.13.1",
+    "react-datepicker": "^7.3.0",
+    "react-router-dom": "^6.25.1"
   }
 }

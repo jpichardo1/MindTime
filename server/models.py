@@ -123,6 +123,8 @@ class Task(db.Model, SerializerMixin):
     id = db.Column(db.Integer, primary_key=True)
     description = db.Column(db.Text, nullable=False)
     completed = db.Column(db.Boolean, default=False)
+    start = db.Column(db.DateTime)
+    end = db.Column(db.DateTime)
     day_id = db.Column(db.Integer, db.ForeignKey('days.id'), nullable=False)
 
     day = db.relationship('Day', back_populates='tasks')

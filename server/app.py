@@ -108,8 +108,10 @@ class Tasks(Resource):
         req_json = request.get_json()
         new_task = Task(
             description=req_json['description'],
-            day_id=req_json['day_id'],
-            completed=req_json.get('completed', False)
+            completed=req_json.get('completed', False),
+            start=req_json['start'],
+            end=req_json['end'],
+            day_id=req_json['day_id']      
         )
         db.session.add(new_task)
         db.session.commit()
