@@ -1,0 +1,14 @@
+/* styles.css */
+.calendar {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  .day {
+    flex: 1 0 14%;
+    border: 1px solid #ddd;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
